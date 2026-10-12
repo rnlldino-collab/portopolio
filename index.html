@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Yohanes Rockynaldino Buang Baling</title>
+  <meta name="description" content="Portofolio Yohanes Rockynaldino Buang Baling, mahasiswa Informatika Universitas Muhammadiyah Maumere." />
+
+  <!-- Font (opsional, ada cadangan jika offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGASI -->
+  <header class="nav">
+    <a href="#beranda" class="nav__logo">rocky<span>.</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navMenu">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#skill">Skill</a>
+      <a href="#motivasi">Motivasi</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- BERANDA -->
+    <section class="hero" id="beranda">
+      <div class="hero__text">
+        <p class="hero__hello">Halo, saya</p>
+        <h1 class="hero__name">Rockynaldino</h1>
+        <p class="hero__role">
+          Mahasiswa Informatika yang suka
+          <span class="rotator" id="rotator" aria-live="polite">futsal</span>
+        </p>
+        <div class="hero__actions">
+          <a href="#skill" class="btn btn--solid">Lihat skill saya</a>
+          <a href="#kontak" class="btn btn--line">Hubungi saya</a>
+        </div>
+      </div>
+
+      <!-- Kartu identitas gaya swatch warna -->
+      <aside class="chip" aria-label="Kartu identitas">
+        <div class="chip__color" id="chipColor">
+          <span class="chip__initial">R</span>
+          <!-- Foto: simpan file bernama foto.jpg di folder yang sama dengan index.html -->
+          <img src="foto.jpg" alt="Foto Yohanes Rockynaldino Buang Baling" class="chip__photo" onerror="this.remove()" />
+        </div>
+        <div class="chip__info">
+          <p class="chip__name">Yohanes Rockynaldino Buang Baling</p>
+          <p class="chip__meta">Informatika</p>
+          <p class="chip__meta">NIM 20250202045</p>
+          <p class="chip__hex" id="chipHex">#1E8FE1</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- TENTANG -->
+    <section class="section" id="tentang">
+      <h2 class="section__title">Tentang saya</h2>
+      <div class="about">
+        <p class="about__lead">
+          Saya Yohanes Rockynaldino Buang Baling, biasa dipanggil Rockynaldino.
+          Saya mahasiswa Informatika di Universitas Muhammadiyah Maumere dan suka bermain futsal.
+        </p>
+
+        <dl class="data">
+          <div><dt>Nama lengkap</dt><dd>Yohanes Rockynaldino Buang Baling</dd></div>
+          <div><dt>Nama panggilan</dt><dd>Rockynaldino</dd></div>
+          <div><dt>NIM</dt><dd>20250202045</dd></div>
+          <div><dt>Jurusan</dt><dd>Informatika</dd></div>
+          <div><dt>Kampus</dt><dd>Universitas Muhammadiyah Maumere</dd></div>
+          <div><dt>Alamat</dt><dd>Jln Moan Subu Sadipipun</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SKILL -->
+    <section class="section section--tint" id="skill">
+      <h2 class="section__title">Skill</h2>
+      <p class="section__sub">Warna favorit saya biru langit. Klik kotak warna untuk menyalin kode warnanya.</p>
+
+      <div class="skill">
+        <div class="skill__main">
+          <h3>Bermain futsal</h3>
+          <p>
+            Futsal melatih kerja sama tim, kecepatan berpikir, dan kebugaran badan.
+          </p>
+          <ul class="tags">
+            <li>Futsal</li>
+          </ul>
+        </div>
+
+        <div class="palette" id="palette" role="list" aria-label="Palet warna biru langit">
+          <button class="swatch" role="listitem" style="--c:#1E8FE1" data-hex="#1E8FE1"><span>#1E8FE1</span></button>
+          <button class="swatch" role="listitem" style="--c:#8FD0FF" data-hex="#8FD0FF"><span>#8FD0FF</span></button>
+          <button class="swatch" role="listitem" style="--c:#DDF1FF" data-hex="#DDF1FF"><span>#DDF1FF</span></button>
+          <button class="swatch" role="listitem" style="--c:#0B5C9E" data-hex="#0B5C9E"><span>#0B5C9E</span></button>
+          <button class="swatch" role="listitem" style="--c:#082B45" data-hex="#082B45"><span>#082B45</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOTIVASI -->
+    <section class="quote" id="motivasi">
+      <p class="quote__label">Motivasi saya</p>
+      <blockquote class="quote__text">
+        Jeda yang cukup mencegah kelelahan, dan sadarilah bahwa setiap orang memiliki timeline suksesnya masing-masing.
+      </blockquote>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="section" id="kontak">
+      <h2 class="section__title">Kontak &amp; alamat</h2>
+      <div class="contact">
+        <div class="contact__card">
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/6281246065772" target="_blank" rel="noopener">081246065772</a></p>
+        </div>
+        <div class="contact__card">
+          <h3>E-mail</h3>
+          <p><a href="mailto:rnlldino@gmail.com">rnlldino@gmail.com</a></p>
+        </div>
+        <div class="contact__card">
+          <h3>Instagram</h3>
+          <p><a href="https://instagram.com/rockhynalldino29" target="_blank" rel="noopener">@rockhynalldino29</a></p>
+        </div>
+        <div class="contact__card">
+          <h3>Alamat</h3>
+          <p>Jln Moan Subu Sadipipun</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Yohanes Rockynaldino Buang Baling · Informatika, Universitas Muhammadiyah Maumere</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
